@@ -9,7 +9,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const app = express();
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 const url = process.env.MONGODB_URI 
 app.use(cors({
     origin: '*'
