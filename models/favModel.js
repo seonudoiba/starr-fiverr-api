@@ -2,12 +2,7 @@ const mongoose = require("mongoose");
 
 let favSchema = new mongoose.Schema(
 	{
-		Title: {
-			type: Number,
-			required: true,
-			default: 0,
-		},
-        favId: {
+        fav: {
 			type: mongoose.Schema.Types.ObjectId,
 			ref: "Services",
 		},
